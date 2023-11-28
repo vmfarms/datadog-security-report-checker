@@ -40,7 +40,7 @@ do
     cd $MOD_LOCAL_FOLDER
     steampipe check $control_name --output md --export $report_location/$control_name.md &> /dev/null
     [ $? > 0 ] && status="❌" || status="✅"
-    echo "|$status|[$pretty_name]($report_location/$control_name.md)|" >> $report_location/README.md
+    echo "|$status|[$pretty_name]($control_name.md)|" >> $report_location/README.md
     cd - &> /dev/null
 done < <(tail -n +2 $CONTROL_CSV_FILE)
 
