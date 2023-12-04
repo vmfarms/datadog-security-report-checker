@@ -18,7 +18,7 @@ check_commands() {
 clone_model() {
     address=$1
     folder=$2
-    [ ! -d "$folder" ] && git clone $address $folder || cd $folder; git pull; cd - &> /dev/null
+    [ ! -d "$folder" ] && git clone $address $folder
 }
 
 create_report_folder () {
@@ -29,7 +29,12 @@ create_report_folder () {
     echo "$PWD/$report_location"
 }
 
+check_sp_aws_plugin () {
+    steampipe plugin update aws || steampipe plugin install aws
+}
+
 check_commands steampipe git aws
+check_sp_aws_plugin
 clone_model $MOD_ADDR $MOD_LOCAL_FOLDER
 aws iam generate-credential-report | cat - &> /dev/null
 report_location=$(create_report_folder)
@@ -44,4 +49,4 @@ do
     cd - &> /dev/null
 done < <(tail -n +2 $CONTROL_CSV_FILE)
 
-
+echo "Your report has been created. Check the `report` folder."
