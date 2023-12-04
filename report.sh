@@ -18,7 +18,7 @@ check_commands() {
 clone_model() {
     address=$1
     folder=$2
-    [ ! -d "$folder" ] && git clone $address $folder || cd $folder; git pull; cd - &> /dev/null
+    [ ! -d "$folder" ] && git clone $address $folder
 }
 
 create_report_folder () {
