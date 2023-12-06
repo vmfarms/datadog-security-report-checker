@@ -49,4 +49,4 @@ do
     cd - &> /dev/null
 done < <(tail -n +2 $CONTROL_CSV_FILE)
 
-echo "Your report has been created. Check the `report` folder."
+echo "Your report has been created. Check the report folder."
