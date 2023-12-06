@@ -5,10 +5,10 @@ This project aims to enhance cloud security by performing compliance checks in A
 
 ## Features
 - **Long-lived Credentials Check**: Identifies and reports on static, non-expiring credentials, a major cause of cloud security breaches【6†source】.
-- **MFA Enforcement Verification**: Ensures Multi-Factor Authentication is enforced for cloud access, crucial for preventing account takeovers【7†source】.
-- **IMDSv2 Enforcement**: Validates the enforcement of Instance Metadata Service V2 (IMDSv2) to protect against server-side request forgery (SSRF) attacks【8†source】.
 - **Public Access Block Checks**: Monitors public access settings in cloud storage services to prevent data leakage【9†source】.
+- **MFA Enforcement Verification**: Ensures Multi-Factor Authentication is enforced for cloud access, crucial for preventing account takeovers【7†source】.
 - **VMs Internet Exposure Audit**: Assesses the exposure of virtual machines to the public internet to mitigate the risk of attacks【11†source】.
+- **IMDSv2 Enforcement**: Validates the enforcement of Instance Metadata Service V2 (IMDSv2) to protect against server-side request forgery (SSRF) attacks【8†source】.
 
 ## Requiments
 The following is required to run this project properly:
