@@ -22,6 +22,7 @@ The following is required to run this project properly:
 - Execute the `report.sh` file
 
 Demo:
+
 ![](assets/demo.gif)
 
 ## License
