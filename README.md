@@ -9,6 +9,7 @@ This project aims to enhance cloud security by performing compliance checks in A
 - **MFA Enforcement Verification**: Ensures Multi-Factor Authentication is enforced for cloud access, crucial for preventing account takeovers【[”](https://www.datadoghq.com/state-of-cloud-security/#2)】.
 - **VMs Internet Exposure Audit**: Assesses the exposure of virtual machines to the public internet to mitigate the risk of attacks【[”](https://www.datadoghq.com/state-of-cloud-security/#6)】.
 - **IMDSv2 Enforcement**: Validates the enforcement of Instance Metadata Service V2 (IMDSv2) to protect against server-side request forgery (SSRF) attacks【[”](https://www.datadoghq.com/state-of-cloud-security/#3)】.
+- **Excessively privileged workload**: Checks if full permission is granted to any entity and if Access Analyzer is enabled to mitigate possible workloads given excessive privileges[”](https://www.datadoghq.com/state-of-cloud-security/#5)】.
 
 ## Requiments
 The following is required to run this project properly:
@@ -21,6 +22,7 @@ The following is required to run this project properly:
 - Execute the `report.sh` file
 
 Demo:
+
 ![](assets/demo.gif)
 
 ## License

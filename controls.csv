@@ -4,3 +4,5 @@ aws_compliance.control.cis_v200_2_1_4,Ensure that S3 Buckets are configured with
 aws_compliance.control.cis_v200_1_10,Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password
 aws_compliance.control.ec2_instance_not_publicly_accessible,EC2 instances should not have a public IP address
 aws_compliance.control.cis_v200_5_6,Ensure that EC2 Metadata Service only allows IMDSv2
+aws_compliance.control.cis_v200_1_16,Ensure IAM policies that allow full "*:*" administrative privileges are not attached
+aws_compliance.control.cis_v200_1_20,Ensure that IAM Access analyzer is enabled for all regions
